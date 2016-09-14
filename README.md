@@ -1,7 +1,7 @@
 # Randid
 Create unique ID numbers on the fly using UTC time and random number, including custom attributes.
 
-### Usage
+### .create([identifier])
 
 <code>var IDnumber = randid.create([identifier])</code>
 
@@ -10,3 +10,27 @@ Create unique ID numbers on the fly using UTC time and random number, including 
 type: string or number<br>
 <em> Additional attribute to include in the ID, in the format \<number>.\<number>\<identifier> <br>
 Example: <code>14738401913740.3256069523461649\<identifier></code>
+<hr>
+### .store(ID [, overwrite])
+
+<code>randid.store(ID [, overwrite)</code><br>
+Stores randid ID in localstorage<br><br>
+<b> ID</b>:<br>
+<em>Required</em><br>
+type: string <br>
+<em> The ID generated using randid.create </em>
+
+<b> overwrite</b>:<br>
+<em>Optional</em><br>
+type: boolean<br>
+<em> Overwite the current ID, if it exists. (Defaut: false)</em>
+<hr>
+### .get()
+
+<code>randid.get()</code><br>
+Gets the randid ID from localstorage
+<hr>
+### .clear()
+
+<code>randid.clear()</code><br>
+Removes the randid ID variable from localstorage
