@@ -21,14 +21,12 @@ var randid = {
 	get: function get() {
 		if (localStorage.randid) {
 			return localStorage.randid;
-		} else {
-			new Error("No ID found in localstorage")
 		}
 	},
 
 	clear: function clear() {
 		if (localStorage.randid) {
-			localStorage.removeItem('randid')
+			localStorage.removeItem('randid');
 		}
 	}
 };
