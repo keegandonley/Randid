@@ -1,6 +1,8 @@
 # Randid
 Create unique ID numbers on the fly using UTC time and random number, including custom attributes.
-
+<br>
+<br>
+<hr>
 ### .create([identifier])
 
 <code>var IDnumber = randid.create([identifier])</code>
