@@ -7,4 +7,28 @@ var randid = {
 		}
 		return randidString;
 	},
+
+	store: function store(identifier, overwrite = false) {
+		if (localStorage.randid) {
+			if (overwrite) {
+				localStorage.randid = identifier;
+			}
+		} else {
+			localStorage.randid = identifier;
+		}
+	},
+
+	get: function get() {
+		if (localStorage.randid) {
+			return localStorage.randid;
+		} else {
+			new Error("No ID found in localstorage")
+		}
+	},
+
+	clear: function clear() {
+		if (localStorage.randid) {
+			localStorage.removeItem('randid')
+		}
+	}
 };
