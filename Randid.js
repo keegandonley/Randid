@@ -1,6 +1,6 @@
 var randid = {
 	// Create a new random ID, using optional additional randomizer
-	create: function newID(element = false) {
+	create: function newID(element) {
 		var randidString = "" + Date.now() + Math.random();
 		if (element) {
 			randidString += element;
@@ -8,7 +8,7 @@ var randid = {
 		return randidString;
 	},
 
-	store: function store(identifier, overwrite = false) {
+	store: function store(identifier, overwrite) {
 		if (localStorage.randid) {
 			if (overwrite) {
 				localStorage.randid = identifier;
