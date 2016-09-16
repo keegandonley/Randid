@@ -15,7 +15,7 @@ Example: <code>14738401913740.3256069523461649\<identifier></code>
 <hr>
 ### .store(ID [, overwrite])
 
-<code>randid.store(ID [, overwrite)</code><br>
+<code>randid.store(ID [, overwrite])</code><br>
 Stores randid ID in localstorage<br><br>
 <b> ID</b>:<br>
 <em>Required</em><br>
