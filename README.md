@@ -1,5 +1,6 @@
 # Randid
 Create unique ID numbers on the fly using UTC time and random number, including custom attributes.
+![Randid Image](https://raw.githubusercontent.com/keegandonley/Randid/master/Randid.png)
 <br>
 <br>
 <hr>
