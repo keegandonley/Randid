@@ -13,9 +13,9 @@ type: string or number<br>
 <em> Additional attribute to include in the ID, in the format \<number>.\<number>\<identifier> <br>
 Example: <code>14738401913740.3256069523461649\<identifier></code>
 <hr>
-<code>.store(ID [, overwrite])</code>
+<code>.store(ID, [overwrite])</code>
 
-<code>randid.store(ID [, overwrite])</code><br>
+<code>randid.store(ID, [overwrite])</code><br>
 Stores randid ID in localstorage<br><br>
 <b> ID</b>:<br>
 <em>Required</em><br>
